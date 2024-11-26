@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    padding-left: 20px;
+  }
+  .hidden {
+    display: none;
+  }
+  .question {
+    margin-bottom: 20px;
+  }
+  #result {
+    margin-top: 30px;
+  }
+
+  /* CSS สำหรับ Responsive Design */
+  /* เมื่อหน้าจอกว้างกว่า 768px (สำหรับแท็บเล็ตและเดสก์ท็อป) */
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    #quizContainer {
+      margin-top: 50px;
+    }
+    #submitBtn {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+    }
+  }
+
+  /* เมื่อหน้าจอเล็กกว่า 768px (มือถือ) */
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 2rem;
+    }
+    #startBtn {
+      width: 100%;
+      font-size: 1.2rem;
+    }
+    #submitBtn {
+      font-size: 1rem;
+      width: 100%;
+    }
+    #quizContainer {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }

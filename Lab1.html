@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แบบทดสอบออนไลน์</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqEKmh0bPz5C1l9t6c0z7khmbk7ew3Af7gqZs7giP9z1n" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap JS (จำเป็นสำหรับบางส่วนประกอบที่ใช้ JavaScript เช่น Modal, Tooltip) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="container" id="intro">
+    <h1 class="text-center">ยินดีต้อนรับสู่แบบทดสอบออนไลน์</h1>
+    <p class="text-center">หมวดวิชารอบรู้วิทยาศาสตร์</p>
+    <div class="text-center">
+      <button id="startBtn" class="btn btn-primary btn-lg">เริ่มทำแบบทดสอบ</button>
+    </div>
+  </div>
+
+  <div id="quizContainer" class="hidden container">
+    <h2 id="subjectTitle" class="text-center"></h2>
+    <div id="questionsContainer"></div>
+    <div class="text-center">
+      <button id="submitBtn" class="btn btn-success btn-lg hidden">ตรวจคำตอบ</button>
+    </div>
+    <div id="result" class="hidden text-center"></div>
+  </div>
+
+  <script src="quiz.js"></script>
+
+</body>
+</html>
