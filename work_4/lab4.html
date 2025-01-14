@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VR Introduction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- พื้นหลังแบบ 360 -->
+      <a-sky src="./back.webp"></a-sky>
+
+      <!-- โหลดโมเดล Gundam Unicorn -->
+      <a-assets>
+        <a-asset-item id="gundam-model" src="./gundam_unicorn.glb"></a-asset-item>
+      </a-assets>
+
+      <!-- แสดงโมเดลในฉาก -->
+      <a-entity 
+        gltf-model="#gundam-model"
+        position="0 0 -5" 
+        rotation="0 0 0" 
+        scale="0.08 0.08 0.08"
+        animation="property: position; to: 0 0.9 -5; dur: 500; dir: alternate; loop: true"></a-entity>
+        
+      </a-entity>
+
+      
+      
+
+      <!-- ข้อมูลแนะนำตัว -->
+      <a-text 
+      value="Name: Thanachai Fungkhachon" 
+      position="-1 2 -3" 
+      width="4" 
+      color="#ffff"
+      animation="property: position; to: -1 2.5 -3; dur: 2000; dir: alternate; loop: true">
+      </a-text>
+
+      <a-text 
+      value="ID: 653380018-3" 
+      position="-1 1.8 -3" 
+      width="4" 
+      color="#ffff"
+      animation="property: position; to: -1 2.3 -3; dur: 2000; dir: alternate; loop: true">
+      </a-text>
+
+      <a-text 
+      value="Take Command of Your Mobile Suit! Welcome to Gundam Space!" 
+      position="-2.2 2.840 -3" 
+      width="5" 
+      color="#ffff"
+      >
+      </a-text>
+
+      
+      
+
+      <!-- Camera เพื่อมองไปรอบ ๆ -->
+      <a-camera position="0 1.6 0">
+        <a-cursor></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
